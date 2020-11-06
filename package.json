@@ -9,6 +9,11 @@
         "build": "webpack",
         "watch": "webpack --watch",
         "start": "webpack-dev-server --open"
+        "lint": "eslint \"src/**/*.{js,jsx}\"",
+        "lint-fix": "eslint --fix \"src/**/*.{js,jsx}\"",
+
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "dependencies": {
         "@fullcalendar/core": "^5.0.0",
