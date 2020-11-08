@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom'
-import { Columns, Container,button } from 'react-bulma-components';
+// import { Columns, Container,button } from 'react-bulma-components';
 import * as ReactBootstrap from "react-bootstrap";
 import './main.css'
 

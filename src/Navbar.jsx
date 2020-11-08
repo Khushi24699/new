@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom'
-import { Columns, Container,button } from 'react-bulma-components';
+// import { Columns, Container,button } from 'react-bulma-components';
 import * as ReactBootstrap from "react-bootstrap";
 import './main.css'
+import Searchevent from './Searchevent.jsx' ;
+
 
 
          
@@ -28,8 +30,8 @@ export default class Navbar extends React.Component {
                 
               </ReactBootstrap.Nav>  
                 <ReactBootstrap.Form inline >
-                <ReactBootstrap.FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                
+                {/* <ReactBootstrap.FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
+                <Searchevent/>
                 
                 <ReactBootstrap.Button variant="Light">
                 <svg width="3em" height="2em" viewBox="0 0 16 16" className="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
