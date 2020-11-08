@@ -24,6 +24,6 @@ phases:
       - echo yarn build completed on `date`
   post_build:
     commands:
-      - aws s3 sync --delete build/ s3://www.drdettner.de --acl public-read
+      - aws s3 sync --delete build/ s3://todo --acl public-read
 
 
