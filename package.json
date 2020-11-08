@@ -6,7 +6,7 @@
     "license": "ISC",
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "webpack",
+        "build": "webpack --config prod.config.js",
         "watch": "webpack --watch",
         "start": "webpack-dev-server --open",
         "lint": "eslint \"src/**/*.{js,jsx}\"",
