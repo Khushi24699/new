@@ -6,10 +6,12 @@
     "license": "ISC",
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "webpack --config prod.config.js",
+
         "watch": "webpack --watch",
         "start": "webpack-dev-server --open",
-        "production": "webpack -p",
+
+        "build-dev": "webpack --mode development",
+        "build": "webpack --mode production",
         "lint": "eslint \"src/**/*.{js,jsx}\"",
         "lint-fix": "eslint --fix \"src/**/*.{js,jsx}\"",
         "test": "react-scripts test",

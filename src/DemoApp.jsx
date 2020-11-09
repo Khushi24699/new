@@ -295,19 +295,19 @@ export default class DemoApp extends React.Component
  
   handleDateSelect = (selectInfo) => {
     // const [modal, setModal] = useState(false);
-    // let title = prompt('enter new title')
-    // let calendarApi = selectInfo.view.calendar
+    let title = prompt('enter new title')
+    let calendarApi = selectInfo.view.calendar
 
-    // calendarApi.unselect();   
-    // if (title) {
-    //   calendarApi.addEvent({
-    //     id: createEventId(),
-    //     title,
-    //     start: selectInfo.startStr,
-    //     end: selectInfo.endStr,
-    //     allDay: selectInfo.allDay
-    //   })
-    newEventModal();
+    calendarApi.unselect();   
+    if (title) {
+      calendarApi.addEvent({
+        id: createEventId(),
+        title,
+        start: selectInfo.startStr,
+        end: selectInfo.endStr,
+        allDay: selectInfo.allDay
+      })
+    // newEventModal();
     // setSelectedDay(selectInfo);
     // toggle();
 
@@ -427,47 +427,47 @@ export default class DemoApp extends React.Component
 
   
 
-function newEventModal(){
-  console.log("inside");
-  const [modal, setModal] = useState(false);
+// function newEventModal(){
+//   console.log("inside");
+//   const [modal, setModal] = useState(false);
   
-    setModal(!modal)
+//     setModal(!modal)
 
 
-  return(
-     <Modal isOpen={modal} toggle={() => toggle()} className="">
-          <ModalHeader toggle={() => toggle()} tag="h4">
-             Add Event
-          </ModalHeader>
-              <ModalBody>
+//   return(
+//      <Modal isOpen={modal} toggle={() => toggle()} className="">
+//           <ModalHeader toggle={() => toggle()} tag="h4">
+//              Add Event
+//           </ModalHeader>
+//               <ModalBody>
                 
-                    <Row form>
+//                     <Row form>
                       
-                      <Col className="col-12">
-                          <AvField type="select" name="category" label="Select Category" value={event ? event.category : 'bg-primary'}>
-                            <option value="bg-danger">Danger</option>
-                            <option value="bg-success">Success</option>
-                            <option value="bg-primary">Primary</option>
-                            <option value="bg-info">Info</option>
-                            <option value="bg-dark">Dark</option>
-                            <option value="bg-warning">Warning</option>
-                         </AvField>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <div className="text-right">
-                         <button type="button" className="btn btn-light mr-2" onClick={() => toggle()}>Close</button>
-                         <button type="submit" className="btn btn-success save-event">Save</button>
-                       </div>
-                      </Col>
-                    </Row>
+//                       <Col className="col-12">
+//                           <AvField type="select" name="category" label="Select Category" value={event ? event.category : 'bg-primary'}>
+//                             <option value="bg-danger">Danger</option>
+//                             <option value="bg-success">Success</option>
+//                             <option value="bg-primary">Primary</option>
+//                             <option value="bg-info">Info</option>
+//                             <option value="bg-dark">Dark</option>
+//                             <option value="bg-warning">Warning</option>
+//                          </AvField>
+//                       </Col>
+//                     </Row>
+//                     <Row>
+//                       <Col>
+//                         <div className="text-right">
+//                          <button type="button" className="btn btn-light mr-2" onClick={() => toggle()}>Close</button>
+//                          <button type="submit" className="btn btn-success save-event">Save</button>
+//                        </div>
+//                       </Col>
+//                     </Row>
                  
-              </ModalBody>
-        </Modal> 
+//               </ModalBody>
+//         </Modal> 
 
-  )
-}
+//   )
+// }
 
 
 function renderEventContent(eventInfo) {
