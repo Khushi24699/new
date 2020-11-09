@@ -467,7 +467,7 @@ export default class DemoApp extends React.Component
 //         </Modal> 
 
 //   )
-// }
+ }
 
 
 function renderEventContent(eventInfo) {
