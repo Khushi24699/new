@@ -9,7 +9,7 @@
         "watch": "webpack --watch",
         "start": "webpack-dev-server --open",
         "build-dev": "webpack --mode development",
-        "build": "webpack --config webpack.prod.js",
+        "build": "webpack --mode production",
         "lint": "eslint \"src/**/*.{js,jsx}\"",
         "lint-fix": "eslint --fix \"src/**/*.{js,jsx}\"",
         "test": "react-scripts test",
